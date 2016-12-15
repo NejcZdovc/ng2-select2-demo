@@ -10,10 +10,12 @@ import { Select2OptionData, Select2TemplateFunction } from "ng2-select2";
 export class AppComponent {
     public startValue: string = 'car3';
     public startData: Array<Select2OptionData>;
+    public exampleData: Array<Select2OptionData>;
     public selected: string = "";
 
-    constructor(private data: DataService) {
-        this.startData = this.data.getComplexList();
+    constructor(private service: DataService) {
+        this.startData = this.service.getComplexList();
+        this.exampleData = this.service.getSimpleList();
     }
 
     // function for result template
@@ -49,7 +51,7 @@ export class AppComponent {
     }
 
     public changeData() {
-        this.startData = this.data.getComplexListAlternative();
+        this.startData = this.service.getComplexListAlternative();
     }
 
     public changed(e: any): void {

@@ -9,7 +9,7 @@ export class DataService {
                 id: 'val1',
                 text: 'Value 1',
                 additional: {
-                    image: 'https://unsplash.it/50/50/?image=0',
+                    image: 'assets/image0.jpg',
                     winner: '4'
                 }
             },
@@ -24,7 +24,7 @@ export class DataService {
                 id: 'val3',
                 text: 'Value 3',
                 additional: {
-                    image: 'https://unsplash.it/50/50/?image=1',
+                    image: 'assets/image1.jpg',
                     winner: '1'
                 }
             },
@@ -32,7 +32,7 @@ export class DataService {
                 id: 'val4',
                 text: 'Value 4',
                 additional: {
-                    image: 'https://unsplash.it/50/50/?image=2',
+                    image: 'assets/image2.jpg',
                     winner: '5'
                 }
             },
@@ -40,7 +40,7 @@ export class DataService {
                 id: 'val5',
                 text: 'Value 5',
                 additional: {
-                    image: 'https://unsplash.it/50/50/?image=3',
+                    image: 'assets/image3.jpg',
                     winner: '2'
                 }
             }
