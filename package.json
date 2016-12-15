@@ -8,7 +8,8 @@
     "lint": "tslint \"src/**/*.ts\"",
     "test": "ng test",
     "pree2e": "webdriver-manager update",
-    "e2e": "protractor"
+    "e2e": "protractor",
+    "gh-deploy": "ng build -bh '/ng2-select2/' -prod && ng github-pages:deploy --skip-build"
   },
   "private": true,
   "dependencies": {
@@ -21,8 +22,10 @@
     "@angular/platform-browser-dynamic": "2.2.1",
     "@angular/router": "3.2.1",
     "core-js": "^2.4.1",
+    "jquery": "^3.1.1",
     "ng2-select2": "0.6.2",
     "rxjs": "5.0.0-beta.12",
+    "select2": "^4.0.3",
     "ts-helpers": "^1.1.1",
     "zone.js": "^0.6.23"
   },
