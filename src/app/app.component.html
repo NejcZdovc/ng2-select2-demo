@@ -3,7 +3,7 @@
 <select2 [width]="200" [data]="data.getSimpleList()" [templateResult]="templateResult" [templateSelection]="templateSelection"></select2>
 
 <h2>Select2 with a value change and dynamic loading</h2>
-Select 2: <select2 [value]="startValue" (valueChanged)="changed($event)" [data]="startData" [width]="200" [theme]="'classic'"></select2>
+<select2 [value]="startValue" (valueChanged)="changed($event)" [data]="startData" [width]="200" [theme]="'classic'"></select2>
 <div *ngIf="selected">
     <br/><br/>
     Selected value in select 2: <b>{{selected}}</b>
