@@ -1,44 +1,70 @@
 import { Injectable } from '@angular/core';
 import { Select2OptionData } from 'ng2-select2';
+import { Observable } from 'rxjs/Observable';
 
 @Injectable()
 export class DataService {
-    getSimpleList(): Select2OptionData[] {
+
+    getDynamicList(): Observable<Array<Select2OptionData>> {
+        return Observable.create((obs) => {
+            obs.next([
+                {
+                    id: 'dyn1',
+                    text: 'Dynamic 1'
+                },
+                {
+                    id: 'dyn2',
+                    text: 'Dynamic 2'
+                },
+                {
+                    id: 'dyn3',
+                    text: 'Dynamic 3'
+                },
+                {
+                    id: 'dyn4',
+                    text: 'Dynamic 4'
+                }
+            ]);
+            obs.complete();
+        });
+    }
+
+    getTemplateList(): Select2OptionData[] {
         return [
             {
-                id: 'val1',
-                text: 'Value 1',
+                id: 'temp1',
+                text: 'Template 1',
                 additional: {
                     image: 'assets/image0.jpg',
                     winner: '4'
                 }
             },
             {
-                id: 'val2',
-                text: 'Value 2',
+                id: 'temp2',
+                text: 'Template 2',
                 additional: {
                     winner: '3'
                 }
             },
             {
-                id: 'val3',
-                text: 'Value 3',
+                id: 'temp3',
+                text: 'Template 3',
                 additional: {
                     image: 'assets/image1.jpg',
                     winner: '1'
                 }
             },
             {
-                id: 'val4',
-                text: 'Value 4',
+                id: 'temp4',
+                text: 'Template 4',
                 additional: {
                     image: 'assets/image2.jpg',
                     winner: '5'
                 }
             },
             {
-                id: 'val5',
-                text: 'Value 5',
+                id: 'temp5',
+                text: 'Template 5',
                 additional: {
                     image: 'assets/image3.jpg',
                     winner: '2'
@@ -47,7 +73,7 @@ export class DataService {
         ];
     }
 
-    getComplexList(): Select2OptionData[] {
+    getChangeList(): Select2OptionData[] {
         return [
             {
                 id: '0',
@@ -88,7 +114,7 @@ export class DataService {
         ];
     }
 
-    getComplexListAlternative(): Select2OptionData[] {
+    getChangeListAlternative(): Select2OptionData[] {
         return [
             {
                 id: '0',

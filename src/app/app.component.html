@@ -1,13 +1,9 @@
-<h2>Select2 with a template</h2>
+<app-basic></app-basic>
 
-<select2 [data]="exampleData" [width]="200" [templateResult]="templateResult" [templateSelection]="templateSelection"></select2>
+<app-options></app-options>
 
-<h2>Select2 with a value change and dynamic loading</h2>
-<select2 [value]="startValue" (valueChanged)="changed($event)" [data]="startData" [width]="200" [theme]="'classic'"></select2>
-<div *ngIf="selected">
-    <br/><br/>
-    Selected value in select 2: <b>{{selected}}</b>
-</div>
-<br/><br/>
-<button (click)="changeValue()">Change value dynamically</button>
-<button (click)="changeData()">Change data dynamically</button>
+<app-template></app-template>
+
+<app-change></app-change>
+
+<app-dynamic></app-dynamic>
