@@ -9,11 +9,16 @@ import { DataService } from '../../../services/data.service';
 })
 export class TemplateComponent implements OnInit {
   public exampleData: Array<Select2OptionData>;
+  public options: Select2Options;
 
   constructor(private service: DataService) {}
 
   ngOnInit() {
     this.exampleData = this.service.getTemplateList();
+    this.options = {
+      templateResult: this.templateResult,
+      templateSelection: this.templateSelection
+    }
   }
 
   // function for result template

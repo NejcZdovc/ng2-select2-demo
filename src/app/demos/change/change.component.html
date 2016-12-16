@@ -1,5 +1,5 @@
 <h2>4. Demo with a value changing</h2>
-<select2 [value]="startValue" (valueChanged)="changed($event)" [data]="exampleData"></select2>
+<select2 [data]="exampleData" [value]="startValue" (valueChanged)="changed($event)"></select2>
 <div *ngIf="selected">
   <br/><br/>
   Selected value in select 2: <b>{{selected}}</b>

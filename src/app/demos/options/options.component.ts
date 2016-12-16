@@ -8,6 +8,7 @@ import { Select2OptionData } from 'ng2-select2';
 })
 export class OptionsComponent implements OnInit {
   public exampleData: Array<Select2OptionData>;
+  public options: Select2Options;
 
   ngOnInit() {
     this.exampleData = [
@@ -28,5 +29,11 @@ export class OptionsComponent implements OnInit {
         text: 'Options 4'
       }
     ];
+
+    this.options = {
+      multiple: true,
+      theme: 'classic',
+      closeOnSelect: false
+    }
   }
 }
