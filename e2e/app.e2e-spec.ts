@@ -1,6 +1,6 @@
 import { Ng2Select2DemoPage } from './app.po';
 
-describe('ng2-select2-demos App', function() {
+describe('ng2-select2-demo App', function() {
   let page: Ng2Select2DemoPage;
 
   beforeEach(() => {
