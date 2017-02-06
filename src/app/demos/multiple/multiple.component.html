@@ -1,0 +1,10 @@
+<h2>7. Multiple values demo</h2>
+
+<select2 [data]="exampleData"
+         [options]="options"
+         [width]="500"
+         [value]="value"
+         (valueChanged)="changed($event)"
+></select2>
+<br/><br/>
+Selected values: {{ current }}

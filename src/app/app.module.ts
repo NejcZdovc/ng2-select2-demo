@@ -15,6 +15,7 @@ import { DynamicComponent } from './demos/dynamic/dynamic.component';
 import { OptionsComponent } from './demos/options/options.component';
 import { ChangeComponent } from './demos/change/change.component';
 import { MatcherComponent } from './demos/matcher/matcher.component';
+import { MultipleComponent } from './demos/multiple/multiple.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { MatcherComponent } from './demos/matcher/matcher.component';
     DynamicComponent,
     OptionsComponent,
     TemplateComponent,
-    MatcherComponent
+    MatcherComponent,
+    MultipleComponent
   ],
   imports: [
     BrowserModule,
