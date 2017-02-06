@@ -1,31 +1,35 @@
-# Ng2Select2Demo
+# Demos for angular wrapper for Select2 (ng2-select2)
 
-This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.25.5.
+You can view a live demo [here](https://nejczdovc.github.io/ng2-select2-demo)
 
-## Development server
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Every single demo is separate component. Bellow you can find links to components with descriptions.
 
-## Code scaffolding
+#### [Demo](https://github.com/NejcZdovc/ng2-select2-demo/tree/master/src/app/demos/basic)
+- basic demo with only data input
+- disabled value in data array
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive/pipe/service/class/module`.
+#### [Demo](https://github.com/NejcZdovc/ng2-select2-demo/tree/master/src/app/demos/options) with options
+- width option
+- theme option
+- multiple option
+- closeOnSelect option
 
-## Build
+#### [Demo](https://github.com/NejcZdovc/ng2-select2-demo/tree/master/src/app/demos/template) with custom template demo
+- custom template for drop down
+- custom template for select2 input
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+#### [Demo](https://github.com/NejcZdovc/ng2-select2-demo/tree/master/src/app/demos/change) with data changing demo
+- when you change value in drop down, new value is displayed on the screen
+- you can change selected value
+- you can change select2 data
 
-## Running unit tests
+#### [Demo](https://github.com/NejcZdovc/ng2-select2-demo/tree/master/src/app/demos/dynamic) with dynamic load demo
+- data is loaded with 4 second delay
+- selected value is loaded with 6 second delay
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### [Demo](https://github.com/NejcZdovc/ng2-select2-demo/tree/master/src/app/demos/matcher) with a custom matcher
+- we only match results if they are the same from the start of the string
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-Before running the tests make sure you are serving the app via `ng serve`.
-
-## Deploying to GitHub Pages
-
-Run `ng github-pages:deploy` to deploy to GitHub Pages.
-
-## Further help
-
-To get more help on the `angular-cli` use `ng help` or go check out the [Angular-CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+### [Demo](https://github.com/NejcZdovc/ng2-select2-demo/tree/master/src/app/demos/multiple) with a multiple options
+- multiple options
+- default value

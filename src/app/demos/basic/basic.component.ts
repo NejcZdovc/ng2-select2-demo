@@ -17,6 +17,7 @@ export class BasicComponent implements OnInit {
       },
       {
         id: 'basic2',
+        disabled: true,
         text: 'Basic 2'
       },
       {
