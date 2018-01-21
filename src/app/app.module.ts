@@ -1,7 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
-import { HttpModule } from '@angular/http';
 
 import { Select2Module } from 'ng2-select2';
 
@@ -17,6 +15,7 @@ import { ChangeComponent } from './demos/change/change.component';
 import { MatcherComponent } from './demos/matcher/matcher.component';
 import { MultipleComponent } from './demos/multiple/multiple.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -30,8 +29,6 @@ import { MultipleComponent } from './demos/multiple/multiple.component';
   ],
   imports: [
     BrowserModule,
-    FormsModule,
-    HttpModule,
     Select2Module
   ],
   providers: [ DataService ],
